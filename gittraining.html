@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Top MNCs in Hyderabad</title> 
+    <link rel="stylesheet" href="gittraining.css">
+    <link rel="script" href="gittraining.js">
+</head>
+
+<body>
+  <header>
+    <h1>Top MNC Companies in Hyderabad</h1>
+  </header>
+
+  <div class="btns">
+    <button onclick="openModal('signin')">Sign In</button>
+    <button onclick="openModal('signup')">Sign Up</button>
+  </div>
+
+  <section class="company-container">
+    <div class="company-card">Google</div>
+    <div class="company-card">Amazon</div>
+    <div class="company-card">Microsoft</div>
+    <div class="company-card">Facebook</div>
+    <div class="company-card">Deloitte</div>
+    <div class="company-card">Accenture</div>
+    <div class="company-card">IBM</div>
+    <div class="company-card">Infosys</div>
+  </section>
+
+  <!-- Sign In Modal -->
+  <div class="modal" id="signinModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('signinModal')">&times;</span>
+      <h3>Sign In</h3>
+      <input type="email" id="signinEmail" placeholder="Email">
+      <input type="password" id="signinPassword" placeholder="Password">
+      <button onclick="signIn()">Login</button>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div class="modal" id="signupModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('signupModal')">&times;</span>
+      <h3>Sign Up</h3>
+      <input type="text" id="signupName" placeholder="Full Name">
+      <input type="email" id="signupEmail" placeholder="Email">
+      <input type="password" id="signupPassword" placeholder="Password">
+      <button onclick="signUp()">Register</button>
+    </div>
+  </div>
+
+</body>
+</html>
+
